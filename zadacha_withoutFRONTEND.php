@@ -1,8 +1,13 @@
 <?php
 
+// Функционално решение(без OOP) на задачата, изисква в същата папка да има тестови файл, името на който слагаме в първата променлива
+// $filename и  стартираме от конзолата:     php -q zadacha_withoutFRONTEND.php
+
+
+
 // $filename = 'project_worktime.csv';
  $filename = 'employeess.csv';
-//$filename = 'test.csv';
+
 
 require __DIR__ . '/vendor/autoload.php';
 use Carbon\Carbon;
