@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employees who worked together the longest on most common projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Employees who worked together the longest</h1>
+    <form action="zadacha.php" method="post" enctype="multipart/form-data">
+      <label class="filebox" for="csv">Choose a CSV file&nbsp;&nbsp;</label>
+      <input type="file" id="csv" name="csv" accept=".csv,.txt,text/csv,text/plain"
+             onchange="this.form.submit()">
+		<button type="submit">Upload</button>
+    </form>
+
+    <p class="hint">
+      Upload CSV with columns <code>EmpID, ProjectID, DateFrom, DateTo</code>.<br>
+      An empty <code>DateTo</code> means today. If the values in EmpID or ProjectID are not integers, for example "E-90" the row is invalid and will not be calculated.
+    </p>
+  </div>
+</body>
+</html>
